@@ -35,10 +35,8 @@ steps:
     pytest
   displayName: 'pytest'
 
-
-
 - task: Priyanka@1
   inputs:
-    apikey: 'hgj'
-    apisecret: 'ghjgj'
-    testid: 'ghjghj'
+    apikey: 'aaaaaaaa'
+    apisecret: 'fffffffff'
+    testid: 'ffffffffffff'
