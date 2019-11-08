@@ -20,7 +20,7 @@ steps:
 
 - task: Priyanka@1
   inputs:
-    apikey: 'aa'
-    apisecret: 'dd'
-    testid: 'ff'
+    apikey: 'fg'
+    apisecret: 'dfg'
+    testid: 'gdfg'
 
