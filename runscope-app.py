@@ -7,8 +7,7 @@ import os
 def main():   
     results = {}   
     result = _get_result()
-   
-print "All test runs passed."
+    print "All test runs passed."
 
 def _get_result(): 
    url = "https://a.blazemeter.com/api/v4/tests/7389741/start"
