@@ -1,6 +1,17 @@
-import http.client
+import requests
+import sys
+import time
+import os
 
-conn = http.client.HTTPConnection("a,blazemeter,com")
+
+def main():   
+    results = {}   
+    result = _get_result()
+   
+print "All test runs passed."
+
+def _get_result(): 
+   url = "https://a.blazemeter.com/api/v4/tests/7389741/start"
 
 headers = {
     'Content-Type': "application/json",
@@ -8,7 +19,7 @@ headers = {
     'User-Agent': "PostmanRuntime/7.19.0",
     'Accept': "*/*",
     'Cache-Control': "no-cache",
-    'Postman-Token': "9e58d93d-8a03-4ead-972b-559b8775d6b1,d3444990-a6d3-42cb-91f8-7233f3833cb8",
+    'Postman-Token': "9e58d93d-8a03-4ead-972b-559b8775d6b1,e195269a-94ba-419b-9eed-65611dbbca3d",
     'Host': "a.blazemeter.com",
     'Accept-Encoding': "gzip, deflate",
     'Cookie': "bzm_sess=a49850b5873308c85fa9d8c702cd60ea",
@@ -17,9 +28,14 @@ headers = {
     'cache-control': "no-cache"
     }
 
-conn.request("POST", "api,v4,tests,7389741,start", headers=headers)
+result_resp = requests.request("POST", url, headers=headers)
+   
 
-res = conn.getresponse()
-data = res.read()
+   if result_resp.ok:
+        return result_resp.json()
 
-print(data.decode("utf-8"))
+    return None
+
+
+if __name__ == '__main__':
+    main()
