@@ -39,4 +39,4 @@ steps:
   inputs:
     apikey: 'ghj'
     apisecret: 'ghj'
-    testid: 'gj'
+    testid: 'ghj'
