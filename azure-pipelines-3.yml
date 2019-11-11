@@ -20,6 +20,6 @@ steps:
 
 - task: Priyanka@1
   inputs:
-    apikey: 'sdfds'
-    apisecret: 'sdfs'
-    testid: 'dfsdf'
+    apikey: 'ghfg'
+    apisecret: 'fghfh'
+    testid: 'fghfg'
