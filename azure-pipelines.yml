@@ -23,3 +23,9 @@ steps:
     apikey: 'gbn'
     apisecret: 'bvnvb'
     testid: 'nvbn'
+
+- task: Priyanka@1
+  inputs:
+    apikey: 'hjk'
+    apisecret: 'hjk'
+    testid: 'hjk'
