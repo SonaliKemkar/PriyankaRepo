@@ -35,7 +35,8 @@ steps:
     pytest
   displayName: 'pytest'
 
-- task: runscopetest@1
+- task: Priyanka@1
   inputs:
-    triggerUrl: 'fgh'
-    accessToken: 'fghfgh'
+    apikey: 'hjkh'
+    apisecret: 'hjk'
+    testid: 'hjk'
