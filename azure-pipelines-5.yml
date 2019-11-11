@@ -37,6 +37,6 @@ steps:
 
 - task: Priyanka@1
   inputs:
-    apikey: 'jk'
-    apisecret: 'hjkhj'
-    testid: 'khkjhj'
+    apikey: 'bfg'
+    apisecret: 'hfghfh'
+    testid: 'fghfgh'
