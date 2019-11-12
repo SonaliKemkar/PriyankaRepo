@@ -24,8 +24,6 @@ steps:
     apisecret: 'bvnvb'
     testid: 'nvbn'
 
-- task: Priyanka@1
+- task: Pipeline Task@0
   inputs:
-    apikey: 'hfgh'
-    apisecret: 'fghgfh'
-    testid: 'fgh'
+    samplestring: 'aaaaaaaa'
