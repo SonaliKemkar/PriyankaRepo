@@ -1,0 +1,25 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+
+- task: BlazeMeter Integration Test@1
+  inputs:
+    apikey: '027416adcfec6ed25adee469'
+    apisecret: '4968d5668411e49b05e911642465b921831fad06fd8e607fbb875ce40b2f8214464a3a02'
+    testurl: 'https://a.blazemeter.com/app/#/accounts/393468/workspaces/391145/projects/480195/tests/7429508'
